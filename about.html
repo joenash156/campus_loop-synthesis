@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | CampusLoop</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" integrity crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+        >
+        <nav class="nav-links" id="mainNav">
+          <a href="index.html">Home</a><a href="marketplace.html">Marketplace</a
+          ><a href="lost-found.html">Lost & Found</a><a href="saved.html">Saved</a
+          ><a href="dashboard.html">My Activity</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i></button
+          ><a class="btn btn-primary" href="sell.html"><i class="fa-solid fa-plus"></i> Post item</a
+          ><button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-hero-inner fade-up">
+          <p class="eyebrow"><i class="fa-solid fa-circle-info"></i> About CampusLoop</p>
+          <h1>A practical campus platform with a community purpose.</h1>
+          <p>CampusLoop combines a student marketplace with a thoughtful Lost & Found workflow.</p>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container">
+          <div class="detail-grid">
+            <article class="detail-card detail-content fade-up">
+              <p class="eyebrow"><i class="fa-solid fa-store"></i> Marketplace</p>
+              <h2 style="font-size: 2rem">Keep useful things in circulation.</h2>
+              <p class="muted">
+                Students can list items they no longer need, browse nearby listings, save products, and contact sellers
+                directly.
+              </p>
+            </article>
+            <article class="detail-card detail-content fade-up">
+              <p class="eyebrow"><i class="fa-solid fa-location-crosshairs"></i> Lost & Found</p>
+              <h2 style="font-size: 2rem">Return belongings without oversharing.</h2>
+              <p class="muted">
+                Sensitive information is intentionally withheld so a claimant can prove ownership before an item is
+                returned.
+              </p>
+            </article>
+          </div>
+          <div class="split-banner" style="margin-top: 26px">
+            <div class="split-banner-copy">
+              <p class="eyebrow"><i class="fa-solid fa-triangle-exclamation"></i> Demo limitation</p>
+              <h2>Frontend-only means local, not private.</h2>
+              <p class="muted">
+                This project uses HTML, CSS, JavaScript, and localStorage. Data stored in the browser can be inspected,
+                so the sensitive-item workflow is a UX demonstration rather than real secure storage.
+              </p>
+            </div>
+            <div class="split-banner-visual"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+            >
+            <p class="muted" style="max-width: 360px; margin-top: 14px">
+              A student-first marketplace and lost-and-found platform for keeping useful items and belongings moving
+              safely around campus.
+            </p>
+          </div>
+          <div>
+            <h4>Marketplace</h4>
+            <div class="footer-links">
+              <a href="marketplace.html">Browse items</a><a href="sell.html">Sell an item</a
+              ><a href="saved.html">Saved items</a>
+            </div>
+          </div>
+          <div>
+            <h4>Lost & Found</h4>
+            <div class="footer-links">
+              <a href="lost-found.html">Browse reports</a><a href="report.html">Report an item</a
+              ><a href="about.html">Safety guidance</a>
+            </div>
+          </div>
+          <div>
+            <h4>CampusLoop</h4>
+            <div class="footer-links"><a href="about.html">About</a><a href="dashboard.html">My activity</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 CampusLoop. All rights reserved.</span><span>Buy. Sell. Find. Return.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

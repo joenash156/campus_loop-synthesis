@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | CampusLoop</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" crossorigin="anonymous" integrity href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+        >
+        <nav class="nav-links" id="mainNav">
+          <a href="index.html">Home</a><a href="marketplace.html">Marketplace</a
+          ><a href="lost-found.html">Lost & Found</a><a href="saved.html">Saved</a
+          ><a href="dashboard.html">My Activity</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i></button
+          ><a class="btn btn-primary" href="sell.html"><i class="fa-solid fa-plus"></i> Post item</a
+          ><button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy fade-up">
+            <p class="eyebrow"><i class="fa-solid fa-circle-nodes"></i> Student marketplace + lost & found</p>
+            <h1>Buy. Sell. Find. Return. All in one campus loop.</h1>
+            <p>
+              CampusLoop helps students exchange useful items, recover lost belongings, and return found objects through
+              one clear, trusted campus platform.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="marketplace.html"
+                ><i class="fa-solid fa-store"></i> Explore marketplace</a
+              ><a class="btn btn-secondary" href="lost-found.html"
+                ><i class="fa-solid fa-magnifying-glass"></i> Lost something?</a
+              >
+            </div>
+            <div class="hero-metrics">
+              <div class="metric"><strong>150+</strong><span>student listings</span></div>
+              <div class="metric"><strong>24</strong><span>items returned</span></div>
+              <div class="metric"><strong>7</strong><span>campus zones</span></div>
+            </div>
+          </div>
+          <div class="hero-visual fade-up">
+            <div class="float-card one">
+              <img
+                class="float-img"
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+                alt="Wireless headphones"
+              />
+              <div class="float-body">
+                <span class="badge success">Available</span><strong>Wireless Headphones</strong
+                ><span>GHS 180 · Hostels</span>
+              </div>
+            </div>
+            <div class="float-card two">
+              <img
+                class="float-img"
+                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=80"
+                alt="Wireless earbuds"
+              />
+              <div class="float-body">
+                <span class="badge warning">Found</span><strong>Wireless Earbuds</strong><span>Library · Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trust-strip">
+        <div class="container trust-inner fade-up">
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-user-shield"></i></span
+            ><span><strong>Safer exchange</strong><br /><small class="muted">Meet in public campus spaces</small></span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-shield-halved"></i></span
+            ><span
+              ><strong>Sensitive protection</strong><br /><small class="muted">Hide identifying details</small></span
+            >
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-filter"></i></span
+            ><span><strong>Fast discovery</strong><br /><small class="muted">Search and filter quickly</small></span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="fa-solid fa-mobile-screen"></i></span
+            ><span><strong>Responsive</strong><br /><small class="muted">Works on phone and desktop</small></span>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><i class="fa-solid fa-bag-shopping"></i> Marketplace</p>
+              <h2>Fresh listings from students</h2>
+              <p class="muted">Browse useful items around campus and contact the seller directly.</p>
+            </div>
+            <a class="btn btn-secondary" href="marketplace.html"
+              >View all listings <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="card-grid" id="featuredMarket"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split-banner fade-up">
+          <div class="split-banner-copy">
+            <p class="eyebrow"><i class="fa-solid fa-location-crosshairs"></i> Lost & Found</p>
+            <h2>Someone may already have found what you lost.</h2>
+            <p class="muted">
+              Browse reports by category and campus location. Sensitive items like cash and ID cards hide identifying
+              details until ownership can be verified.
+            </p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px">
+              <a class="btn btn-primary" href="lost-found.html">Browse Lost & Found</a
+              ><a class="btn btn-secondary" href="report.html">Report an item</a>
+            </div>
+          </div>
+          <div class="split-banner-visual"></div>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><i class="fa-solid fa-hand-holding-heart"></i> Community returns</p>
+              <h2>Recently reported on campus</h2>
+            </div>
+          </div>
+          <div class="card-grid" id="recentFound"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+            >
+            <p class="muted" style="max-width: 360px; margin-top: 14px">
+              A student-first marketplace and lost-and-found platform for keeping useful items and belongings moving
+              safely around campus.
+            </p>
+          </div>
+          <div>
+            <h4>Marketplace</h4>
+            <div class="footer-links">
+              <a href="marketplace.html">Browse items</a><a href="sell.html">Sell an item</a
+              ><a href="saved.html">Saved items</a>
+            </div>
+          </div>
+          <div>
+            <h4>Lost & Found</h4>
+            <div class="footer-links">
+              <a href="lost-found.html">Browse reports</a><a href="report.html">Report an item</a
+              ><a href="about.html">Safety guidance</a>
+            </div>
+          </div>
+          <div>
+            <h4>CampusLoop</h4>
+            <div class="footer-links"><a href="about.html">About</a><a href="dashboard.html">My activity</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 CampusLoop. All rights reserved.</span><span>Buy. Sell. Find. Return.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

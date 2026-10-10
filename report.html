@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Item | CampusLoop</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" integrity crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container navbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+        >
+        <nav class="nav-links" id="mainNav">
+          <a href="index.html">Home</a><a href="marketplace.html">Marketplace</a
+          ><a href="lost-found.html">Lost & Found</a><a href="saved.html">Saved</a
+          ><a href="dashboard.html">My Activity</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i></button
+          ><a class="btn btn-primary" href="sell.html"><i class="fa-solid fa-plus"></i> Post item</a
+          ><button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-hero-inner fade-up">
+          <p class="eyebrow"><i class="fa-solid fa-hand-holding-heart"></i> Report item</p>
+          <h1>Lost something, or found something?</h1>
+          <p>
+            Create a clear report. For sensitive items, hide identifying details publicly and verify ownership
+            privately.
+          </p>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container form-shell">
+          <form class="form-card" id="reportForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="reportType">Report type</label
+                ><select class="select" id="reportType" name="type" required>
+                  <option value="Lost">I lost an item</option>
+                  <option value="Found">I found an item</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="reportCategory">Category</label
+                ><select class="select" id="reportCategory" name="category" required>
+                  <option value="">Choose category</option>
+                  <option>Electronics</option>
+                  <option>Personal Items</option>
+                  <option>Books & Notes</option>
+                  <option>Sensitive</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="reportTitle">Public title</label
+                ><input class="input" id="reportTitle" name="title" required />
+              </div>
+              <div class="form-group">
+                <label for="reportLocation">Location</label
+                ><select class="select" id="reportLocation" name="location" required>
+                  <option value="">Choose location</option>
+                  <option>Library</option>
+                  <option>Engineering Block</option>
+                  <option>Cafeteria</option>
+                  <option>Hostels</option>
+                  <option>Sports Centre</option>
+                  <option>Lecture Halls</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="reportDate">Date</label
+                ><input class="input" id="reportDate" name="date" type="date" required />
+              </div>
+              <div class="form-group">
+                <label for="contactName">Your name</label
+                ><input class="input" id="contactName" name="contactName" required />
+              </div>
+              <div class="form-group">
+                <label for="reportPhone">Contact number</label
+                ><input class="input" id="reportPhone" name="phone" type="tel" required />
+              </div>
+              <div class="form-group full">
+                <label for="reportImage">Image URL</label
+                ><input class="input" id="reportImage" name="image" type="url" />
+              </div>
+              <div class="form-group full">
+                <label for="reportDescription">Public description</label
+                ><textarea class="textarea" id="reportDescription" name="description" required></textarea>
+              </div>
+              <div class="form-group full">
+                <label class="check-row"
+                  ><input id="sensitive" name="sensitive" type="checkbox" /><span
+                    >This is a sensitive item (cash, ID, bank card, keys, etc.)</span
+                  ></label
+                >
+              </div>
+              <div class="form-group full" id="sensitiveBlock" hidden>
+                <label for="verification">Ownership verification guidance</label
+                ><textarea class="textarea" id="verification" name="verification"></textarea
+                ><span class="help">Do not enter real confidential data in this frontend demo.</span>
+              </div>
+            </div>
+            <div class="form-actions">
+              <a class="btn btn-secondary" href="lost-found.html">Cancel</a
+              ><button class="btn btn-primary" type="submit">
+                <i class="fa-solid fa-paper-plane"></i> Submit report
+              </button>
+            </div>
+          </form>
+          <aside class="side-card">
+            <p class="eyebrow"><i class="fa-solid fa-shield-halved"></i> Protect ownership</p>
+            <h3>Sensitive-item rule</h3>
+            <div class="callout">
+              Never publish the exact amount of cash, full ID details, PINs, passwords, or information only the real
+              owner should know.
+            </div>
+            <ul class="side-list" style="margin-top: 18px">
+              <li><i class="fa-solid fa-eye-slash"></i><span>Hide identifying details.</span></li>
+              <li><i class="fa-solid fa-user-check"></i><span>Verify ownership before return.</span></li>
+              <li><i class="fa-solid fa-location-dot"></i><span>Meet in a safe public place.</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i class="fa-solid fa-arrows-rotate"></i></span><span>CampusLoop</span></a
+            >
+            <p class="muted" style="max-width: 360px; margin-top: 14px">
+              A student-first marketplace and lost-and-found platform for keeping useful items and belongings moving
+              safely around campus.
+            </p>
+          </div>
+          <div>
+            <h4>Marketplace</h4>
+            <div class="footer-links">
+              <a href="marketplace.html">Browse items</a><a href="sell.html">Sell an item</a
+              ><a href="saved.html">Saved items</a>
+            </div>
+          </div>
+          <div>
+            <h4>Lost & Found</h4>
+            <div class="footer-links">
+              <a href="lost-found.html">Browse reports</a><a href="report.html">Report an item</a
+              ><a href="about.html">Safety guidance</a>
+            </div>
+          </div>
+          <div>
+            <h4>CampusLoop</h4>
+            <div class="footer-links"><a href="about.html">About</a><a href="dashboard.html">My activity</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 CampusLoop. All rights reserved.</span><span>Buy. Sell. Find. Return.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
